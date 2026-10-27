@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Download · APEX Engineer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="APEX Engineer für macOS laden: ein Paket für Apple Silicon und Intel ab macOS 13, Installation, erster Start und Versionsgeschichte.">
+<meta name="theme-color" content="#0b0b10">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Russo+One&family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="APEX Engineer, Startseite"><span class="apex">APEX</span><span class="slash"></span><span class="eng">ENGINEER</span></a>
+    <nav class="nav-links" aria-label="Hauptnavigation"><a href="index.html">Spiel</a><a href="konstruktion.html">Konstruktion</a><a href="rennwochenende.html">Rennwochenende</a><a href="epochen.html">Epochen</a><a class="btn primary" href="download.html">Für macOS laden</a></nav>
+    <button class="nav-toggle" type="button" aria-label="Menü" aria-expanded="false"><span></span></button>
+    <nav class="nav-sheet" aria-label="Menü"><a href="index.html">Spiel</a><a href="konstruktion.html">Konstruktion</a><a href="rennwochenende.html">Rennwochenende</a><a href="epochen.html">Epochen</a><a class="btn primary" href="download.html">Für macOS laden <i class="arrow"></i></a></nav>
+  </div>
+</header>
+<main>
+
+<section class="band dl-band">
+  <div class="wrap stack lg">
+    <div class="stack" style="max-width: 760px">
+      <span class="eyebrow">Download</span>
+      <h1 class="wipe">APEX Engineer 2.10 für macOS</h1>
+      <p class="lead">Ein Paket für Apple Silicon und Intel. Kein Konto, keine Internetverbindung, kein Abo. Der Spielstand bleibt auf deinem Mac.</p>
+    </div>
+    <div class="dl">
+      <div class="panel stack dl-card">
+        <div class="panel-head">Installationsdatei</div>
+        <div class="dl-file">
+          <span class="dl-icon" aria-hidden="true">DMG</span>
+          <div><b>APEX-Engineer-2.10-macOS.dmg</b><span class="small">535 MB · 27.10.2026 · Universal</span></div>
+        </div>
+        <div class="btns"><a class="btn primary" href="https://github.com/mateo-gepard/apex-engineer/releases/download/v2.10/APEX-Engineer-2.10-macOS.dmg" download>Herunterladen <i class="arrow"></i></a></div>
+        
+        <div class="stack sm">
+          <span class="small">SHA-256 zum Prüfen</span>
+          <div class="hash"><code id="sha">e561e3c72b20ae5270b1848aebc6803b4be23df0d3f8dc3863eb83c491b3bc96</code><button class="copy" type="button" data-copy="#sha">Kopieren</button></div>
+        </div>
+      </div>
+      <div class="stack">
+        <h3>Voraussetzungen</h3>
+        <dl class="kv">
+          <dt>System</dt><dd>macOS 13 Ventura oder neuer</dd>
+          <dt>Prozessor</dt><dd>Apple Silicon oder Intel</dd>
+          <dt>Grafik</dt><dd>Metal</dd>
+          <dt>Speicherplatz</dt><dd>ca. 1,3 GB nach der Installation</dd>
+          <dt>Fenster</dt><dd>ab 1280 × 720</dd>
+          <dt>Sprache</dt><dd>Deutsch</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band carbon">
+  <div class="wrap">
+    <div class="grid-2 wide-left">
+      <div class="stack lg">
+        <div class="stack">
+          <span class="eyebrow">Installation</span>
+          <h2 class="rise">In drei Schritten zum ersten Start</h2>
+          <p class="muted">APEX Engineer ist ein unabhängiges Projekt ohne Apple-Entwicklerkonto. Die App ist deshalb nicht von Apple beglaubigt (notarisiert). Beim ersten Start fragt macOS deshalb nach. Das ist einmalig.</p>
+        </div>
+        <ol class="steps">
+          <li><div><b>DMG öffnen</b><p>Doppelklick auf die geladene Datei. Es öffnet sich ein Fenster mit der App und einer Verknüpfung zum Ordner „Programme“.</p></div></li>
+          <li><div><b>In „Programme“ ziehen</b><p>Zieh APEX Engineer auf die Verknüpfung. Das Kopieren dauert wegen der Größe ein paar Sekunden.</p></div></li>
+          <li><div><b>Erster Start</b>
+            <p><em class="hi">macOS 13 und 14:</em> Im Ordner „Programme“ mit <span class="kbd">ctrl</span> + Klick auf die App, dann „Öffnen“ und im Dialog noch einmal „Öffnen“.</p>
+            <p><em class="hi">macOS 15 und neuer:</em> App per Doppelklick starten und den Hinweis schließen. Dann Systemeinstellungen → Datenschutz &amp; Sicherheit, ganz nach unten scrollen und bei APEX Engineer „Dennoch öffnen“ wählen. Mit Passwort oder Touch ID bestätigen.</p>
+          </div></li>
+        </ol>
+        <div class="stack sm">
+          <span class="small">Oder im Terminal, nach dem Kopieren in „Programme“:</span>
+          <div class="hash"><code id="xattr">xattr -dr com.apple.quarantine "/Applications/APEX Engineer.app"</code><button class="copy" type="button" data-copy="#xattr">Kopieren</button></div>
+        </div>
+      </div>
+      <div class="stack">
+        <h3>Steuerung im Rennen</h3>
+        <dl class="kv keys">
+          <dt><span class="kbd">Leer</span></dt><dd>Pause</dd>
+          <dt><span class="kbd">1</span>–<span class="kbd">4</span></dt><dd>Fahrmodus</dd>
+          <dt><span class="kbd">B</span></dt><dd>Box rufen</dd>
+          <dt><span class="kbd">C</span></dt><dd>Kamera wechseln</dd>
+          <dt><span class="kbd">F</span></dt><dd>Eigenes Auto verfolgen</dd>
+          <dt><span class="kbd">+</span> <span class="kbd">−</span></dt><dd>Zeitraffer</dd>
+          <dt><span class="kbd">Enter</span> <span class="kbd">⌫</span></dt><dd>Empfehlung annehmen oder ablehnen</dd>
+          <dt><span class="kbd">I</span></dt><dd>Einsteiger oder Ingenieur</dd>
+          <dt><span class="kbd">F1</span></dt><dd>Hilfe</dd>
+        </dl>
+        <p class="small">Alles andere geht mit der Maus. In der Garage klickst du Bauteile direkt am Modell an, die Werkzeugleiste schaltet Ansichten, Explosion und Röntgen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="grid-2 wide-right">
+      <div class="stack">
+        <span class="eyebrow dim">Versionen</span>
+        <h2 class="rise">Was sich geändert hat</h2>
+        <p class="muted">Die 2er-Reihe ist eine vollständige Neugestaltung. Jede Version ist aus Rückmeldungen beim Spielen entstanden.</p>
+      </div>
+      <ol class="timeline">
+        <li><span class="v">2.10</span><p><b>Saubere Startaufstellung.</b> Keine flackernden Flächen mehr in der Boxengasse, Renn-Anzeigen ohne Überlappungen, Meldungen in einer eigenen Spur.</p></li>
+        <li><span class="v">2.9</span><p><b>Garage ohne Seitenleisten.</b> Schlanke Glas-Paneele, die das Auto nicht verdecken, Kaufen immer sichtbar, neue Explosionsansicht.</p></li>
+        <li><span class="v">2.8</span><p><b>Das Auto im Mittelpunkt.</b> 3D-Garage, Bauteile direkt am Modell anklicken, neue Teile werden sichtbar eingebaut.</p></li>
+        <li><span class="v">2.7</span><p><b>TV-Grafik, Ton, Bewegung.</b> Oberfläche im Stil der F1-Übertragung, synthetisierter Motorsound, kein Clipping an den Strecken.</p></li>
+        <li><span class="v">2.6</span><p><b>Konstruktionsbüro.</b> Bauteile selbst entwerfen, in CFD und Windkanal messen, auf der Strecke korrelieren.</p></li>
+        <li><span class="v">2.5</span><p><b>Lackierungen und Startampel</b> nach echtem F1-Ablauf.</p></li>
+        <li><span class="v">2.4</span><p><b>Zwei Tiefen.</b> Einsteiger- und Ingenieursansicht, geführte Touren, Lexikon mit 33 Begriffen.</p></li>
+        <li><span class="v">2.3</span><p><b>Zielkonflikte.</b> Jeder Setup-Wert hat einen Preis im Rennen, Plankenabrieb und Disqualifikation.</p></li>
+        <li><span class="v">2.2</span><p><b>Ingenieurstiefe.</b> Vier Reifen mit eigener Temperatur, Thermik von Bremsen und Kühlung, Laminattheorie für Carbonteile.</p></li>
+        <li><span class="v">2.1</span><p><b>Windkanal</b> mit echter Strömungsrechnung und Aero-Korrelation.</p></li>
+        <li><span class="v">2.0</span><p><b>Neugestaltung.</b> Reifenmischungen, Safety Car, Wetter, Fahrmodi, Karriere mit Zielen.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="apex">APEX</span><span class="slash"></span><span class="eng">ENGINEER</span></a>
+    <nav aria-label="Fußzeile"><a href="index.html">Spiel</a><a href="konstruktion.html">Konstruktion</a><a href="rennwochenende.html">Rennwochenende</a><a href="epochen.html">Epochen</a><a href="download.html">Download</a></nav>
+    <p class="small">Version 2.10 · Unabhängiges Spielprojekt, nicht mit der Formula One Group, der FIA oder den genannten Teams verbunden. Alle Bilder sind Renders aus dem Spiel und seinen 3D-Modellen.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

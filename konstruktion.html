@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Konstruktion · APEX Engineer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Das Konstruktionsbüro in APEX Engineer: fünf Bauteile mit je drei Parametern, Messungen in CFD und Windkanal, Plankenabrieb, Fabrik und Budgetgrenze.">
+<meta name="theme-color" content="#0b0b10">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Russo+One&family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="APEX Engineer, Startseite"><span class="apex">APEX</span><span class="slash"></span><span class="eng">ENGINEER</span></a>
+    <nav class="nav-links" aria-label="Hauptnavigation"><a href="index.html">Spiel</a><a href="konstruktion.html" aria-current="page">Konstruktion</a><a href="rennwochenende.html">Rennwochenende</a><a href="epochen.html">Epochen</a><a class="btn primary" href="download.html">Für macOS laden</a></nav>
+    <button class="nav-toggle" type="button" aria-label="Menü" aria-expanded="false"><span></span></button>
+    <nav class="nav-sheet" aria-label="Menü"><a href="index.html">Spiel</a><a href="konstruktion.html" aria-current="page">Konstruktion</a><a href="rennwochenende.html">Rennwochenende</a><a href="epochen.html">Epochen</a><a class="btn primary" href="download.html">Für macOS laden <i class="arrow"></i></a></nav>
+  </div>
+</header>
+<main>
+
+<section class="page-hero">
+  <div class="hero-media"><img src="assets/img/detail-rearwing.webp" alt="Heckflügel, Beam Wing und Diffusor des 2026er Autos im Studio" width="1600" height="1000" fetchpriority="high"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow cyan">Konstruktionsbüro</span>
+      <h1 class="wipe">Du zeichnest das Teil. Die Physik entscheidet, ob es taugt.</h1>
+      <p class="lead">Im Spiel wählst du keine fertigen Bauteile aus einem Katalog. Du legst Parameter fest, lässt rechnen, testest in CFD und Windkanal und schickst das Teil in die Fertigung. Wie gut es wirklich ist, siehst du erst auf der Strecke.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap stack lg">
+    <div class="stack" style="max-width: 760px">
+      <span class="eyebrow cyan">Fünf Bauteile, fünfzehn Stellgrößen</span>
+      <h2 class="rise">Was du selbst entwirfst</h2>
+      <p class="lead">Jedes Bauteil hat drei Parameter. Die Mitte jeder Skala entspricht dem aktuellen Referenzteil. Je weiter du von dort weggehst, desto teurer wird die Fertigung, desto länger dauert sie und desto ungenauer ist die erste Rechnung. Wähle ein Bauteil in der Zeichnung.</p>
+    </div>
+    <div class="bp" id="hotspots">
+      <img src="assets/img/bp-top.webp" alt="Draufsicht des 2026er Autos als Linienzeichnung" width="2400" height="960" loading="lazy">
+      <button class="hotspot" type="button" style="left: 11%; top: 24%" data-comp="front_wing" aria-pressed="true" aria-label="Frontflügel"></button>
+      <span class="hs-label" style="left: 11%; top: 24%">Frontflügel</span>
+      <button class="hotspot" type="button" style="left: 23%; top: 34%" data-comp="suspension" aria-pressed="false" aria-label="Aufhängung"></button>
+      <span class="hs-label" style="left: 23%; top: 34%">Aufhängung</span>
+      <button class="hotspot" type="button" style="left: 57%; top: 27%" data-comp="sidepods" aria-pressed="false" aria-label="Seitenkästen"></button>
+      <span class="hs-label" style="left: 57%; top: 27%">Seitenkästen</span>
+      <button class="hotspot" type="button" style="left: 64%; top: 80%" data-comp="floor" aria-pressed="false" aria-label="Unterboden"></button>
+      <span class="hs-label" style="left: 64%; top: 80%">Unterboden</span>
+      <button class="hotspot" type="button" style="left: 88%; top: 30%" data-comp="rear_wing" aria-pressed="false" aria-label="Heckflügel"></button>
+      <span class="hs-label left" style="left: 88%; top: 30%">Heckflügel</span>
+    </div>
+
+    <div class="comp-cards">
+      <article class="panel comp-card" data-comp-card="front_wing">
+        <div class="panel-head" style="--flash: var(--cyan)">FW · Frontflügel · Aerodynamik</div>
+        <div class="params">
+          <div class="param"><h4>Profilwölbung</h4><div class="ends"><span>flach</span><span>stark gewölbt</span></div><p>Mehr Wölbung bringt Last auf die Vorderachse und erhöht den Widerstand. In Kombination mit viel Outwash reißt die Strömung in langsamen Kurven ab.</p></div>
+          <div class="param"><h4>Endplatten-Outwash</h4><div class="ends"><span>neutral</span><span>aggressiv</span></div><p>Lenkt die Radwirbel nach außen und speist so den Unterboden. Hinter anderen Autos wird das Auto dadurch empfindlicher.</p></div>
+          <div class="param"><h4>Bauweise</h4><div class="ends"><span>steif, schwer</span><span>leicht, elastisch</span></div><p>Ein elastischer Flügel gibt bei hohem Tempo nach und spart Widerstand. Ist er zu weich, fällt er beim Biegetest der FIA durch.</p></div>
+        </div>
+      </article>
+      <article class="panel comp-card" data-comp-card="floor" hidden>
+        <div class="panel-head" style="--flash: var(--cyan)">UB · Unterboden · Aerodynamik</div>
+        <div class="params">
+          <div class="param"><h4>Venturi-Höhe</h4><div class="ends"><span>hoch</span><span>tief</span></div><p>Ein tiefer Kanal saugt das Auto an den Boden. Das bringt viel Abtrieb, aber das Auto braucht mehr Fahrhöhe, die Planke schleift stärker, und es neigt zum Porpoising.</p></div>
+          <div class="param"><h4>Diffusor-Expansion</h4><div class="ends"><span>flach</span><span>steil</span></div><p>Mehr Expansion bringt Abtrieb, bis die Strömung abreißt. Wo diese Kante liegt, hängt von der Kanalhöhe ab: Je tiefer der Kanal, desto früher.</p></div>
+          <div class="param"><h4>Kantenabdichtung</h4><div class="ends"><span>offen</span><span>abgedichtet</span></div><p>Kantenflügel dichten den Unterboden ab. Er reagiert dann weniger auf die Fahrhöhe und neigt weniger zum Porpoising, ist aber etwas schwerer und hat mehr Widerstand.</p></div>
+        </div>
+      </article>
+      <article class="panel comp-card" data-comp-card="rear_wing" hidden>
+        <div class="panel-head" style="--flash: var(--cyan)">HF · Heckflügel · Aerodynamik</div>
+        <div class="params">
+          <div class="param"><h4>Profilwölbung</h4><div class="ends"><span>Low Drag</span><span>High Downforce</span></div><p>Die klassische Abwägung zwischen Monza und Monaco: Abtrieb an der Hinterachse gegen Widerstand auf der Geraden.</p></div>
+          <div class="param"><h4>Beam Wing</h4><div class="ends"><span>klein</span><span>groß</span></div><p>Der untere Flügel zieht am Diffusor. Er bringt mehr Abtrieb über den Unterboden und mehr Widerstand. Mit einem steilen Diffusor wirkt er stärker.</p></div>
+          <div class="param"><h4>Endplatte</h4><div class="ends"><span>lasttragend</span><span>wirbelarm</span></div><p>Wirbelarme Endplatten sparen Widerstand und kosten etwas Abtrieb.</p></div>
+        </div>
+      </article>
+      <article class="panel comp-card" data-comp-card="sidepods" hidden>
+        <div class="panel-head" style="--flash: var(--cyan)">SK · Seitenkästen · Aerodynamik</div>
+        <div class="params">
+          <div class="param"><h4>Einlassfläche</h4><div class="ends"><span>klein</span><span>groß</span></div><p>Größere Einlässe kühlen besser, kosten aber Widerstand. Ein heißes Rennen verlangt mehr Fläche als ein kühles, und im Windschatten steigt die Kühlmitteltemperatur.</p></div>
+          <div class="param"><h4>Unterschnitt</h4><div class="ends"><span>flach</span><span>tief</span></div><p>Ein tiefer Unterschnitt führt Luft zum Unterboden und spart Gewicht, lässt aber weniger Platz für die Kühler. Mit viel Outwash am Frontflügel wirkt er stärker.</p></div>
+          <div class="param"><h4>Heck-Taillierung</h4><div class="ends"><span>breit</span><span>eng</span></div><p>Eine enge Taillierung spart Widerstand und bringt Abtrieb am Heck, staut aber Wärme.</p></div>
+        </div>
+      </article>
+      <article class="panel comp-card" data-comp-card="suspension" hidden>
+        <div class="panel-head" style="--flash: var(--yellow)">AH · Aufhängung · Chassis</div>
+        <div class="params">
+          <div class="param"><h4>Anti-Dive</h4><div class="ends"><span>wenig</span><span>viel</span></div><p>Hält die Front beim Bremsen oben. Die Aero-Plattform bleibt stabil, der Fahrer spürt aber weniger, was die Vorderräder tun.</p></div>
+          <div class="param"><h4>Heave-Steifigkeit</h4><div class="ends"><span>weich</span><span>hart</span></div><p>Eine harte Abstimmung hält die Fahrhöhe konstant und erlaubt einen tieferen Unterboden. Auf Bodenwellen kostet sie Grip, und die Reifen bauen schneller ab.</p></div>
+          <div class="param"><h4>Kinematik</h4><div class="ends"><span>reifenschonend</span><span>grip-orientiert</span></div><p>Rollzentrum und Sturzverlauf bestimmen, ob du mehr mechanischen Grip oder weniger Reifenverschleiß bekommst.</p></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band carbon">
+  <div class="wrap">
+    <div class="grid-2">
+      <div class="stack">
+        <span class="eyebrow cyan">Korrelation</span>
+        <h2 class="rise">Jedes Werkzeug liegt anders daneben</h2>
+        <p class="lead">Die Rechnung des Büros kennt die Physik, aber nicht dein Auto. CFD misst genau, hat aber einen systematischen Fehler, den du nicht kennst. Der Windkanal trägt nur 15 % dieses Fehlers. Die Wahrheit liefert erst die Strecke.</p>
+        <p class="muted">Pro Rennen stehen dir 8 bis 14 CFD-Läufe und 3 bis 6 Stunden im Windkanal zu, je nach Platz in der Konstrukteurswertung. Der Letzte bekommt am meisten. Mehrere Läufe mitteln das Rauschen heraus, aber nicht den systematischen Fehler.</p>
+        <p class="small">Beispiel rechts: ein neuer Unterboden, der in Wirklichkeit 2,0 % mehr Abtrieb bringt. Den CFD-Fehler würfelt das Spiel pro Karriere und Bauteil zwischen −14 % und +18 %.</p>
+      </div>
+      <div class="corr" id="corr" aria-label="Abtriebsschätzung eines neuen Unterbodens in vier Stufen">
+        <div class="corr-axis"><span>0 %</span><span>+1 %</span><span>+2 %</span><span>+3 %</span><span>+4 %</span></div>
+        <div class="corr-track">
+          <i class="truth" style="--x: 44.4%"><span>Wahrer Wert +2,0 %</span></i>
+          <div class="corr-stage" style="--a: 11.1%; --w: 84.4%; --m: 53.3%">
+            <div class="corr-label"><b>Rechnung</b><span>+2,4 % ± 1,9</span></div>
+            <div class="corr-bar"><i data-sigma></i><b></b></div>
+          </div>
+          <div class="corr-stage" style="--a: 43.3%; --w: 12.9%; --m: 49.8%">
+            <div class="corr-label"><b>CFD, 3 Läufe</b><span>+2,24 % ± 0,29</span></div>
+            <div class="corr-bar"><i data-sigma></i><b></b></div>
+          </div>
+          <div class="corr-stage" style="--a: 41.3%; --w: 8%; --m: 45.3%">
+            <div class="corr-label"><b>Windkanal, 2 Läufe</b><span>+2,04 % ± 0,18</span></div>
+            <div class="corr-bar"><i data-sigma></i><b></b></div>
+          </div>
+          <div class="corr-stage" style="--a: 44.1%; --w: .6%; --m: 44.4%">
+            <div class="corr-label"><b>Strecke</b><span>+2,0 %</span></div>
+            <div class="corr-bar"><i data-sigma></i><b></b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap stack lg">
+    <div class="stack" style="max-width: 760px">
+      <span class="eyebrow">Labor 1 · Heckflügel</span>
+      <h2 class="rise">Ein Winkel, drei Strecken</h2>
+      <p class="lead">Rundenzeit über dem Heckflügelwinkel, gerechnet mit dem Fahrzeugmodell des Spiels für das 2026er Auto. Das übrige Setup bleibt auf dem Optimum der jeweiligen Strecke. Zieh den Regler und wechsle die Strecke.</p>
+    </div>
+    <div class="panel lab" id="wing-lab">
+      <div class="lab-controls">
+        <div class="seg" role="group" aria-label="Strecke">
+          <button type="button" data-track="monza" aria-pressed="true">Monza</button>
+          <button type="button" data-track="silverstone" aria-pressed="false">Silverstone</button>
+          <button type="button" data-track="monaco" aria-pressed="false">Monaco</button>
+        </div>
+        <div class="range"><label for="wing-angle">Winkel <output id="wing-out" for="wing-angle">18°</output></label><input id="wing-angle" type="range" min="8" max="36" step="1" value="18"></div>
+      </div>
+      <svg class="chart" data-draw role="img" aria-label="Rundenzeit-Abstand zur Bestzeit über dem Heckflügelwinkel für Monza, Silverstone und Monaco"></svg>
+      <div class="readout">
+        <div><span>Strecke</span><b id="wing-track">Monza</b></div>
+        <div><span>Abstand zur Bestzeit</span><b id="wing-lap">Bestzeit</b></div>
+        <div><span>Topspeed</span><b id="wing-top">333 km/h</b></div>
+        <div><span>Bester Winkel</span><b id="wing-best">18°</b></div>
+      </div>
+      <p class="small">In Monza liegt das Optimum bei 18°, in Silverstone bei 26°, in Monaco bei 30°. Unter 8° fährt in Monza niemand: Der Topspeed steigt dort kaum noch, die Kurvenzeit leidet weiter.</p>
+      <script type="application/json" id="wing-data">{"monaco":{"name":"Monte Carlo","opt_fw":21.0,"opt_rw":26.0,"rows":[[8,73.925,288],[10,73.601,288],[12,73.3,287],[14,73.021,285],[16,72.763,283],[18,72.531,281],[20,72.368,277],[22,72.235,272],[24,72.129,267],[26,72.051,262],[28,71.995,257],[30,71.984,252],[32,72.009,246],[34,72.708,240],[36,73.944,235]]},"monza":{"name":"Monza","opt_fw":13.0,"opt_rw":18.0,"rows":[[8,82.399,339],[10,82.166,339],[12,81.985,339],[14,81.856,339],[16,81.791,337],[18,81.786,333],[20,81.992,327],[22,82.314,321],[24,82.718,314],[26,83.179,307],[28,83.738,300],[30,84.4,292],[32,85.116,283],[34,85.835,276],[36,87.603,271]]},"silverstone":{"name":"Silverstone","opt_fw":20.0,"opt_rw":25.0,"rows":[[8,92.408,329],[10,91.568,328],[12,90.765,327],[14,90.052,325],[16,89.446,323],[18,88.934,320],[20,88.615,315],[22,88.351,310],[24,88.169,304],[26,88.086,298],[28,88.103,293],[30,88.204,285],[32,88.372,277],[34,89.363,270],[36,91.172,263]]}}</script>
+    </div>
+  </div>
+</section>
+
+<section class="band tight">
+  <div class="wrap stack lg">
+    <div class="stack" style="max-width: 760px">
+      <span class="eyebrow">Labor 2 · Planke</span>
+      <h2 class="rise">Ein Millimeter entscheidet über die Wertung</h2>
+      <p class="lead">Unter dem Auto sitzt eine Holzplanke. Nach dem Rennen darf sie höchstens 1,0 mm abgeschliffen sein. Tiefer liegen bringt Abtrieb vom Unterboden, weiche Federn und Bodenwellen schleifen die Planke ab. Geschätzter Abrieb über 58 Runden:</p>
+    </div>
+    <div class="panel lab" id="plank-lab">
+      <div class="lab-controls">
+        <div class="seg" role="group" aria-label="Strecke">
+          <button type="button" data-bumpy="0.3" aria-pressed="true">Glatte Strecke</button>
+          <button type="button" data-bumpy="0.75" aria-pressed="false">Stadtkurs mit Wellen</button>
+        </div>
+        <div class="range"><label for="plank-rh">Fahrhöhe <output id="plank-rh-out" for="plank-rh">32 mm</output></label><input id="plank-rh" type="range" min="22" max="42" step="1" value="32"></div>
+        <div class="range"><label for="plank-spring">Federrate <output id="plank-spring-out" for="plank-spring">×1,00</output></label><input id="plank-spring" type="range" min="0.7" max="1.3" step="0.02" value="1"></div>
+      </div>
+      <svg class="chart" role="img" aria-label="Plankenabrieb in Millimetern über der Fahrhöhe mit der Grenze von 1,0 mm"></svg>
+      <div class="readout">
+        <div><span>Abrieb nach 58 Runden</span><b id="plank-out">0,58 mm</b></div>
+        <div><span>Technische Abnahme</span><b><span id="plank-state" class="badge"><span>Im Reglement</span></span></b></div>
+        <div><span>Unterboden</span><b id="plank-df" style="font-size: 17px; line-height: 1.3">Wenig Abtriebsverlust</b></div>
+      </div>
+      <p class="small">Vereinfachte Fassung des Modells aus dem Spiel bei mittlerer Tankfüllung. Im Spiel heben die Ingenieure die Fahrhöhe vor dem Rennen selbst an, wenn die Planke sonst über 0,8 mm käme, und schicken dir eine Nachricht.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap stack lg">
+    <div class="stack" style="max-width: 760px">
+      <span class="eyebrow">Im Detail</span>
+      <h2 class="rise">Die Teile, um die es geht</h2>
+    </div>
+    <div class="gallery">
+      <figure class="figure g-wide"><img src="assets/img/detail-frontwing.webp" alt="Frontflügel des 2026er Autos mit mehreren Elementen und Endplatte" width="1600" height="1000" loading="lazy"><figcaption>Frontflügel. Die Wölbung der oberen Elemente und die Endplatte bestimmen die Last vorn und den Luftstrom zum Unterboden.</figcaption></figure>
+      <figure class="figure"><img src="assets/img/detail-sidepod.webp" alt="Seitenkasten mit Kühllufteinlass und Unterschnitt" width="1600" height="1000" loading="lazy"><figcaption>Seitenkasten. Der Einlass legt fest, wie viel Kühlluft hineinkommt, der Unterschnitt, wie viel Luft am Boden ankommt.</figcaption></figure>
+      <figure class="figure"><img src="assets/img/detail-wheel.webp" alt="18-Zoll-Rad mit Reifen und Bremsbelüftung" width="1600" height="1000" loading="lazy"><figcaption>18-Zoll-Rad, 2026. Reifentemperatur und Verschleiß rechnet das Spiel für jedes Rad über die ganze Renndistanz.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band carbon">
+  <div class="wrap stack lg">
+    <div class="stack" style="max-width: 760px">
+      <span class="eyebrow">Fabrik und Budget</span>
+      <h2 class="rise">Was ein Teil kostet und wann es fertig ist</h2>
+      <p class="lead">Zwischen zwei Rennen arbeiten vier Abteilungen. Ihre Stufe bestimmt, wie viel aus derselben Idee herauskommt. Geld gibt es genug für schlechte Entscheidungen, aber nicht für alle guten.</p>
+    </div>
+    <div class="cost">
+      <div class="panel stack sm"><span class="eyebrow dim">Abteilungen</span><h3>4 × Stufe 1–10</h3><p class="muted">Aerodynamik, Chassis, Antrieb und Zuverlässigkeit. Eine Stufe mehr in der Aerodynamik bringt jedem Flügel und jedem Unterboden 3 % mehr Wirkung.</p></div>
+      <div class="panel stack sm"><span class="eyebrow dim">Mut kostet</span><h3>bis +90 %</h3><p class="muted">Ein Entwurf nahe am Referenzteil ist in acht Tagen gebaut. Wer alle drei Parameter an den Anschlag schiebt, zahlt bis zu 90 % mehr und wartet bis zu neun Tage länger.</p></div>
+      <div class="panel stack sm"><span class="eyebrow dim">Gleichzeitig</span><h3>2 Projekte</h3><p class="muted">Mehr verkraftet die Fertigung nicht. Ein neuer Unterboden braucht zwei Tage länger als ein Flügel, also planst du ihn um den Kalender herum.</p></div>
+      <div class="panel stack sm"><span class="eyebrow dim">Budgetgrenze</span><h3>45 % + 55 %</h3><p class="muted">Die Ausgabengrenze wächst mit der Saison: 45 % des Epochenbudgets sofort, der Rest anteilig mit jedem Rennen. Wer sie überschreitet, wird bestraft, auch wenn das Konto voll ist.</p></div>
+    </div>
+    <p class="small">Nach 40 % der Saison kannst du bis zu drei Pakete für das Auto des nächsten Jahres beauftragen. Jeder Euro dort fehlt dir im laufenden Titelkampf.</p>
+  </div>
+</section>
+
+<section class="band cta">
+  <div class="bgimg"><img src="assets/img/detail-frontwing.webp" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <div class="stack" style="max-width: 620px">
+      <span class="eyebrow">Weiter</span>
+      <h2 class="rise">Und dann zum Rennen</h2>
+      <p class="lead">Was im Büro gut aussah, muss im Training, im Qualifying und über 58 Runden funktionieren.</p>
+      <div class="btns"><a class="btn primary" href="rennwochenende.html">Zum Rennwochenende <i class="arrow"></i></a><a class="btn ghost" href="download.html">Für macOS laden</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="apex">APEX</span><span class="slash"></span><span class="eng">ENGINEER</span></a>
+    <nav aria-label="Fußzeile"><a href="index.html">Spiel</a><a href="konstruktion.html">Konstruktion</a><a href="rennwochenende.html">Rennwochenende</a><a href="epochen.html">Epochen</a><a href="download.html">Download</a></nav>
+    <p class="small">Version 2.10 · Unabhängiges Spielprojekt, nicht mit der Formula One Group, der FIA oder den genannten Teams verbunden. Alle Bilder sind Renders aus dem Spiel und seinen 3D-Modellen.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

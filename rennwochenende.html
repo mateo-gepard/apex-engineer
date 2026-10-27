@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rennwochenende · APEX Engineer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Training, Qualifying, Strategie, Rennen und Auswertung in APEX Engineer: sieben Setup-Regler, drei Risikostufen, ein Strategierechner und vier Fahrmodi.">
+<meta name="theme-color" content="#0b0b10">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Russo+One&family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="APEX Engineer, Startseite"><span class="apex">APEX</span><span class="slash"></span><span class="eng">ENGINEER</span></a>
+    <nav class="nav-links" aria-label="Hauptnavigation"><a href="index.html">Spiel</a><a href="konstruktion.html">Konstruktion</a><a href="rennwochenende.html" aria-current="page">Rennwochenende</a><a href="epochen.html">Epochen</a><a class="btn primary" href="download.html">Für macOS laden</a></nav>
+    <button class="nav-toggle" type="button" aria-label="Menü" aria-expanded="false"><span></span></button>
+    <nav class="nav-sheet" aria-label="Menü"><a href="index.html">Spiel</a><a href="konstruktion.html">Konstruktion</a><a href="rennwochenende.html" aria-current="page">Rennwochenende</a><a href="epochen.html">Epochen</a><a class="btn primary" href="download.html">Für macOS laden <i class="arrow"></i></a></nav>
+  </div>
+</header>
+<main>
+
+<section class="page-hero">
+  <div class="hero-media"><img src="assets/img/race-tv.webp" alt="Spielszene: das Feld in einer Kurve aus der TV-Perspektive" width="1440" height="900" fetchpriority="high"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">Rennwochenende</span>
+      <h1 class="wipe">Freitag Setup. Samstag Risiko. Sonntag 58 Runden.</h1>
+      <p class="lead">Ein Wochenende hat fünf Abschnitte. In jedem triffst du andere Entscheidungen, und jede wirkt in den nächsten hinein: Ein schlechtes Setup kostet im Qualifying, ein riskantes Qualifying verbraucht Reifen, die im Rennen fehlen.</p>
+      <nav class="jump" aria-label="Abschnitte">
+        <a href="#training">01 Training</a><a href="#qualifying">02 Qualifying</a><a href="#strategie">03 Strategie</a><a href="#rennen">04 Rennen</a><a href="#auswertung">05 Auswertung</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="training">
+  <div class="wrap stack lg">
+    <div class="grid-2 wide-right">
+      <div class="stack">
+        <span class="eyebrow">01 · Training</span>
+        <h2 class="rise">Sieben Regler, ein Fenster</h2>
+        <p class="lead">Jede Strecke hat für jeden Regler einen Bereich, in dem das Auto funktioniert. Am Anfang kennen die Ingenieure ihn nur grob. Nach jedem Run meldet der Fahrer, was ihn stört, und das grüne Fenster wird enger.</p>
+        <p class="muted">Fünf Trainingsblöcke stehen zur Verfügung. Ein Setup-Run schärft das Fenster, eine Qualifying-Simulation zeigt die Rundenzeit, ein Longrun misst den Reifenabbau. Wer nur auf eine Runde abstimmt, erfährt am Sonntag, wie schnell die Reifen nachlassen.</p>
+        <div class="stat cyan" style="max-width: 420px"><span class="v">80 % ≈ 0,2 s</span><span class="k">So viel kostet ein Setup, dem der Fahrer nur zu 80 % vertraut, auf jeder Runde.</span></div>
+      </div>
+      <figure class="shot rise"><img src="assets/img/ui-practice.webp" alt="Spielszene: Setup-Arbeit im Training mit Reglern, Fahrer-Feedback und Longrun-Kurve" width="1440" height="900" loading="lazy"></figure>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Regler</th><th>Bereich</th><th>In die eine Richtung</th><th>Der Preis dafür</th></tr></thead>
+        <tbody>
+          <tr><td>Frontflügel</td><td class="n">5–30°</td><td>Mehr Last vorn, das Auto lenkt williger ein</td><td>Widerstand, unruhigeres Heck</td></tr>
+          <tr><td>Heckflügel</td><td class="n">7–32°</td><td>Abtrieb und Stabilität an der Hinterachse</td><td>Topspeed, Widerstand wächst progressiv</td></tr>
+          <tr><td>Bodenfreiheit</td><td class="n">−16 bis +22 mm</td><td>Tiefer: mehr Abtrieb vom Unterboden</td><td>Aufsetzen auf Wellen, Plankenabrieb</td></tr>
+          <tr><td>Federung</td><td class="n">0,70–1,30×</td><td>Härter: stabile Plattform, weniger Plankenabrieb</td><td>Mechanischer Grip, mehr Reifenverschleiß</td></tr>
+          <tr><td>Bremsbalance</td><td class="n">46–66 % vorn</td><td>Weiter hinten: kürzerer Bremsweg bis zum Optimum</td><td>Hinterachse blockiert, mehr Fahrfehler</td></tr>
+          <tr><td>Differenzial</td><td class="n">15–85 %</td><td>Mehr Sperre: Traktion bis zum Optimum der Strecke</td><td>Verschleiß an den Hinterreifen</td></tr>
+          <tr><td>Übersetzung</td><td class="n">±0,6</td><td>Kürzer: Beschleunigung aus langsamen Kurven</td><td>Endgeschwindigkeit auf der Geraden</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Die Bodenfreiheit wird relativ zum Grundwert der Strecke eingestellt.</p>
+  </div>
+</section>
+
+<section class="band carbon" id="qualifying">
+  <div class="wrap">
+    <div class="grid-2 wide-left">
+      <figure class="shot rise"><img src="assets/img/ui-quali.webp" alt="Spielszene: Qualifying mit Zeitenliste und Risikowahl" width="1440" height="900" loading="lazy"></figure>
+      <div class="stack">
+        <span class="eyebrow">02 · Qualifying</span>
+        <h2 class="rise">Wie viel Risiko für eine Runde?</h2>
+        <p class="lead">Q1, Q2 und Q3 im K.-o.-System. Du wählst Mischung, Zahl der Versuche und Risiko. Eine gestrichene Runde wegen Track Limits ist im Spiel genauso ärgerlich wie in echt.</p>
+        <div class="table-wrap">
+          <table style="min-width: 0">
+            <thead><tr><th>Risiko</th><th>Zeit</th><th>Gestrichen</th></tr></thead>
+            <tbody>
+              <tr><td>Sicher</td><td class="n">+0,15 %</td><td class="n">2 %</td></tr>
+              <tr><td>Normal</td><td class="n">±0</td><td class="n">5 %</td></tr>
+              <tr><td>Am Limit</td><td class="n">−0,28 % ± 0,24</td><td class="n">13 %</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small">„Am Limit“ streut stark. Manchmal bringt es eine halbe Sekunde, manchmal nichts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="strategie">
+  <div class="wrap stack lg">
+    <div class="stack" style="max-width: 760px">
+      <span class="eyebrow">03 · Strategie</span>
+      <h2 class="rise">Wann an die Box?</h2>
+      <p class="lead">Ein Rennen über 58 Runden mit einem Stopp. Im Trockenen sind zwei Mischungen Pflicht. Der Stopp kostet rund 21,6 Sekunden. Je älter ein Reifen ist, desto schneller baut er ab, ab 82 % Verschleiß bricht die Rundenzeit ein. Probier es aus:</p>
+    </div>
+    <div class="panel lab" id="strat-lab">
+      <div class="lab-controls">
+        <div class="stack sm"><span class="lab-k">Erster Stint</span>
+          <div class="seg" role="group" aria-label="Mischung im ersten Stint">
+            <button type="button" data-stint="a" data-c="S" aria-pressed="false"><i class="tyre s"></i>Soft</button><button type="button" data-stint="a" data-c="M" aria-pressed="true"><i class="tyre m"></i>Medium</button><button type="button" data-stint="a" data-c="H" aria-pressed="false"><i class="tyre h"></i>Hart</button>
+          </div>
+        </div>
+        <div class="stack sm"><span class="lab-k">Zweiter Stint</span>
+          <div class="seg" role="group" aria-label="Mischung im zweiten Stint">
+            <button type="button" data-stint="b" data-c="S" aria-pressed="false"><i class="tyre s"></i>Soft</button><button type="button" data-stint="b" data-c="M" aria-pressed="false"><i class="tyre m"></i>Medium</button><button type="button" data-stint="b" data-c="H" aria-pressed="true"><i class="tyre h"></i>Hart</button>
+          </div>
+        </div>
+        <div class="range"><label for="strat-pit">Boxenstopp <output id="strat-pit-out" for="strat-pit">Runde 24</output></label><input id="strat-pit" type="range" min="3" max="55" step="1" value="24"></div>
+      </div>
+      <svg class="chart" role="img" aria-label="Rundenzeit über 58 Runden für deine Strategie, gestrichelt die schnellste Strategie"></svg>
+      <div class="readout">
+        <div><span>Renndauer</span><b id="strat-total">79:14,3</b></div>
+        <div><span>Zur besten Strategie</span><b id="strat-delta">+0,1 s</b></div>
+        <div id="strat-wear-box"><span>Höchster Verschleiß</span><b id="strat-wear">84 %</b></div>
+      </div>
+      <p class="small">Schnellste Kombination in diesem Modell: <span id="strat-opt">M → H, Stopp in Runde 25</span>. Gestrichelt dargestellt. Die Formeln sind dieselben wie im Spiel, ohne Verkehr, Safety Car und Spritlast.</p>
+    </div>
+    <div class="grid-2 wide-right">
+      <div class="stack">
+        <h3>Im Spiel rechnet die Strategieabteilung mit</h3>
+        <ul class="list-tick">
+          <li>dem Reifenabbau aus deinen Longruns im Training</li>
+          <li>der Spritmenge: Leichter ist schneller, aber am Ziel muss ein Liter für die FIA-Probe übrig sein</li>
+          <li>der Wahrscheinlichkeit eines Safety Cars auf dieser Strecke</li>
+          <li>Regen, wenn die Vorhersage ihn meldet</li>
+        </ul>
+      </div>
+      <figure class="shot rise"><img src="assets/img/ui-strategy.webp" alt="Spielszene: Strategiebildschirm mit Optionen, Plan und Rundenzeitkurve" width="1440" height="900" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band carbon" id="rennen">
+  <div class="wrap stack lg">
+    <div class="grid-2">
+      <div class="stack">
+        <span class="eyebrow">04 · Rennen</span>
+        <h2 class="rise">Fünf Lichter, dann gehört das Rennen dem Kommandostand</h2>
+        <p class="lead">Die Ampel arbeitet wie in der Formel 1: Im Sekundentakt gehen fünf Paare roter Lichter an, dann wartet sie zufällig zwischen 0,2 und 3 Sekunden. Wenn alle ausgehen, läuft das Rennen.</p>
+        <div class="gantry gantry-big" data-lights="loop" aria-hidden="true">
+          <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+          <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+          <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+          <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+          <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+        </div>
+      </div>
+      <figure class="shot rise"><img src="assets/img/ui-race-lights.webp" alt="Spielszene: Startaufstellung mit Startampel" width="1440" height="900" loading="lazy"></figure>
+    </div>
+    <div class="stack">
+      <h3>Vier Fahrmodi</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Modus</th><th>Rundenzeit</th><th>Reifen</th><th>Sprit</th><th>Fehlerrisiko</th></tr></thead>
+          <tbody>
+            <tr><td>Schonen</td><td class="n">+0,6 %</td><td class="n">×0,70</td><td class="n">×0,93</td><td class="n">×0,6</td></tr>
+            <tr><td>Normal</td><td class="n">±0</td><td class="n">×1,00</td><td class="n">×1,00</td><td class="n">×1,0</td></tr>
+            <tr><td>Pushen</td><td class="n">−0,5 %</td><td class="n">×1,32</td><td class="n">×1,05</td><td class="n">×1,5</td></tr>
+            <tr><td>Attacke</td><td class="n">−0,9 %</td><td class="n">×1,75</td><td class="n">×1,10</td><td class="n">×2,3</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">Dazu kommt 2026 der Energiemodus: laden, ausgewogen, Boost oder Überholen. Das Ladefenster beträgt 4 MJ pro Runde.</p>
+    </div>
+    <div class="grid-3">
+      <div class="panel stack sm" style="--flash: var(--yellow)"><div class="panel-head">Safety Car</div><p class="muted">Unter Safety Car kostet ein Stopp nur etwa die Hälfte. Der Renningenieur meldet sich mit einer Empfehlung. Du kannst ihn auch ganz abschalten oder entscheiden lassen.</p></div>
+      <div class="panel stack sm" style="--flash: var(--cyan)"><div class="panel-head">Regen</div><p class="muted">Die Strecke trocknet oder wird nasser, Runde für Runde. Intermediates zu früh kosten auf dem Trockenen, zu spät im Nassen.</p></div>
+      <div class="panel stack sm" style="--flash: var(--red)"><div class="panel-head">Kühlung</div><p class="muted">Im Windschatten steigt die Kühlmitteltemperatur. Ab 115 °C nimmt der Motor Leistung zurück. Dann hilft nur Abstand oder ein schonenderer Modus.</p></div>
+    </div>
+    <figure class="shot rise"><img src="assets/img/ui-race.webp" alt="Spielszene: Rennen mit Zeitenturm, Streckenkarte, Funk und Cockpit-Leiste" width="1440" height="900" loading="lazy"></figure>
+    <div class="grid-2">
+      <div class="stack">
+        <h3>Der Ton kommt aus dem Fahrzeugmodell</h3>
+        <p class="muted">Die Motorengeräusche werden im Spiel synthetisiert, nicht abgespielt. V6-Turbo, V8, V10 und V12 klingen nach Zylinderzahl und Drehzahl. Die vier nächsten Autos hörst du mit Dopplereffekt vorbeifahren. Schaltvorgänge, Begrenzer und Turbo folgen dem, was das Fahrzeugmodell gerade rechnet.</p>
+      </div>
+      <div class="stack">
+        <h3>Drei Kameras</h3>
+        <p class="muted">TV-Regie mit Schnitten zwischen Streckenkameras, eine Verfolgerkamera und Onboard. Das Rennen läuft in Echtzeit oder bis zu 32-fach beschleunigt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="auswertung">
+  <div class="wrap">
+    <div class="grid-2 wide-right">
+      <div class="stack">
+        <span class="eyebrow">05 · Auswertung</span>
+        <h2 class="rise">Was hat es gekostet, was hat es gebracht?</h2>
+        <p class="lead">Nach dem Rennen vergleichen die Ingenieure deine Rennpace mit dem Startplatz, zeigen den Reifenabbau je Stint und rechnen aus, wie viel das Setup pro Runde gekostet hat.</p>
+        <p class="muted">Danach folgt die technische Abnahme. Bei mehr als 1,0 mm Plankenabrieb oder weniger als einem Liter Sprit im Tank wirst du disqualifiziert, egal auf welchem Platz du ins Ziel gekommen bist.</p>
+        <ul class="list-tick no">
+          <li>Planke über 1,0 mm</li>
+          <li>Weniger als 1 l Sprit für die Probe</li>
+          <li>Flexibler Frontflügel fällt beim Biegetest durch</li>
+        </ul>
+      </div>
+      <figure class="shot rise"><img src="assets/img/ui-results.webp" alt="Spielszene: Ergebnis mit Klassement, Analyse der Ingenieure und technischer Abnahme" width="1440" height="900" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band cta">
+  <div class="bgimg"><img src="assets/img/race-tv.webp" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <div class="stack" style="max-width: 620px">
+      <span class="eyebrow">Weiter</span>
+      <h2 class="rise">Dasselbe Wochenende, vier Epochen</h2>
+      <p class="lead">1990 gibt es kein Nachtanken und keine Energie, 2004 musst du nachtanken. Die Regeln ändern, was eine gute Entscheidung ist.</p>
+      <div class="btns"><a class="btn primary" href="epochen.html">Zu den Epochen <i class="arrow"></i></a><a class="btn ghost" href="download.html">Für macOS laden</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="apex">APEX</span><span class="slash"></span><span class="eng">ENGINEER</span></a>
+    <nav aria-label="Fußzeile"><a href="index.html">Spiel</a><a href="konstruktion.html">Konstruktion</a><a href="rennwochenende.html">Rennwochenende</a><a href="epochen.html">Epochen</a><a href="download.html">Download</a></nav>
+    <p class="small">Version 2.10 · Unabhängiges Spielprojekt, nicht mit der Formula One Group, der FIA oder den genannten Teams verbunden. Alle Bilder sind Renders aus dem Spiel und seinen 3D-Modellen.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

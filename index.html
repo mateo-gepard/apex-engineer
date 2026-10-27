@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>APEX Engineer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Formel-1-Ingenieurssimulation für macOS: Bauteile entwerfen, in CFD und Windkanal testen, das Setup finden und das Rennen vom Kommandostand führen. Vier Epochen von 1990 bis 2026.">
+<meta name="theme-color" content="#0b0b10">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Russo+One&family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="APEX Engineer, Startseite"><span class="apex">APEX</span><span class="slash"></span><span class="eng">ENGINEER</span></a>
+    <nav class="nav-links" aria-label="Hauptnavigation"><a href="index.html" aria-current="page">Spiel</a><a href="konstruktion.html">Konstruktion</a><a href="rennwochenende.html">Rennwochenende</a><a href="epochen.html">Epochen</a><a class="btn primary" href="download.html">Für macOS laden</a></nav>
+    <button class="nav-toggle" type="button" aria-label="Menü" aria-expanded="false"><span></span></button>
+    <nav class="nav-sheet" aria-label="Menü"><a href="index.html" aria-current="page">Spiel</a><a href="konstruktion.html">Konstruktion</a><a href="rennwochenende.html">Rennwochenende</a><a href="epochen.html">Epochen</a><a class="btn primary" href="download.html">Für macOS laden <i class="arrow"></i></a></nav>
+  </div>
+</header>
+<main>
+
+<section class="hero">
+  <div class="hero-media">
+    <picture>
+      <source media="(max-width: 720px)" srcset="assets/img/hero-m.webp">
+      <img src="assets/img/hero.webp" alt="Das 2026er Auto von APEX Engineer in Weiß und Rot im dunklen Studio" width="2560" height="1200" fetchpriority="high">
+    </picture>
+  </div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="gantry" data-lights data-flash="#hero-title" aria-hidden="true">
+        <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+        <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+        <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+        <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+        <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+      </div>
+      <span class="eyebrow">Formel-1-Ingenieurssimulation für macOS</span>
+      <h1 id="hero-title" class="wipe">Konstruiere ein Formel-1-Auto. <span class="red">Dann fahr damit eine Saison.</span></h1>
+      <p class="lead">Du bist Technischer Direktor eines neuen Teams. Du entwirfst Flügel, Unterboden und Aufhängung, prüfst sie in CFD und Windkanal, findest im Training das Setup und entscheidest im Rennen über Reifen, Boxenstopps und Fahrmodus. In vier echten Reglement-Epochen von 1990 bis 2026.</p>
+      <div class="btns">
+        <a class="btn primary" href="download.html">Für macOS laden <i class="arrow"></i></a>
+        <a class="btn ghost" href="#ablauf">So läuft ein Wochenende</a>
+      </div>
+      <div class="spec-line"><span>Version 2.10</span><span>macOS 13 oder neuer</span><span>Apple Silicon und Intel</span><span>535 MB</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band scrub" data-scrub data-frames="48" data-pattern="assets/img/seq/x###.webp" data-labels="assets/img/seq/labels.json"
+  data-names='{"front_wing":"Frontflügel","nose":"Nase","monocoque":"Monocoque","bodywork":"Verkleidung","floor":"Unterboden","engine":"V6-Turbo","gearbox":"Getriebe","rear_wing":"Heckflügel","front_suspension":"Aufhängung","battery":"Energiespeicher","turbo":"Turbolader","cooling":"Kühler","halo":"Halo"}'>
+  <div class="wrap">
+    <div class="scrub-grid">
+      <div class="scrub-steps">
+        <div class="scrub-step" data-tags="">
+          <div class="panel stack">
+            <span class="eyebrow">Explosionszeichnung · 2026</span>
+            <h2 class="rise">29 Baugruppen. Jede wiegt etwas, jede wirkt.</h2>
+            <p class="muted">Das 2026er Auto besteht im Spiel aus 29 Baugruppen, vom Monocoque bis zum Energiespeicher. Jede hat eine Masse, einen Platz im Auto und eine Wirkung im Fahrzeugmodell. Scroll weiter, und das Auto geht auseinander.</p>
+          </div>
+        </div>
+        <div class="scrub-step" data-tags="monocoque bodywork halo">
+          <div class="panel stack sm" style="--flash: var(--fg)">
+            <div class="panel-head">Chassis und Verkleidung</div>
+            <p class="muted">Das Monocoque trägt alles, der Halo schützt den Fahrer. Die Verkleidung entscheidet, wie viel Luft die Kühler bekommen. Größere Einlässe kühlen besser und kosten Luftwiderstand. Bei Hitze und im Windschatten braucht die Kühlung Reserve.</p>
+          </div>
+        </div>
+        <div class="scrub-step" data-tags="engine gearbox battery turbo cooling">
+          <div class="panel stack sm" style="--flash: var(--red)">
+            <div class="panel-head">Antriebsstrang</div>
+            <p class="muted">1,6-Liter-V6 mit Turbolader und 350-kW-MGU-K. Pro Saison gibt es nur wenige Motoren, Turbos und Getriebe. Wer ein Element über das Kontingent hinaus einbaut, startet weiter hinten.</p>
+          </div>
+        </div>
+        <div class="scrub-step" data-tags="front_wing rear_wing floor nose front_suspension">
+          <div class="panel stack sm" style="--flash: var(--cyan)">
+            <div class="panel-head">Aerodynamik und Fahrwerk</div>
+            <p class="muted">Frontflügel, Unterboden, Heckflügel, Seitenkästen und Aufhängung entwirfst du im Konstruktionsbüro selbst. Jedes Bauteil hat drei Parameter, jeder Parameter eine Nebenwirkung.</p>
+            <a class="btn ghost" href="konstruktion.html">Zum Konstruktionsbüro <i class="arrow"></i></a>
+          </div>
+        </div>
+        <div class="scrub-step" data-tags="front_wing nose monocoque bodywork floor engine gearbox rear_wing">
+          <div class="panel stack sm" style="--flash: var(--green)">
+            <div class="panel-head">Im Spiel zerlegst du es selbst</div>
+            <p class="muted">Die Garage zeigt dein Auto mit allem, was eingebaut ist. Klick ein Bauteil am Modell an, und die Kamera fährt hin. Neu gelieferte Teile siehst du beim nächsten Besuch einsinken, wenn die Mechaniker sie montieren.</p>
+          </div>
+        </div>
+      </div>
+      <div class="scrub-stage">
+        <div class="scrub-frame">
+          <img src="assets/img/seq/x047.webp" alt="Explosionszeichnung des 2026er Autos: Chassis angehoben, Verkleidung darüber, Antriebsstrang nach hinten aufgereiht" loading="lazy">
+          <canvas hidden aria-hidden="true"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="ablauf" data-flow>
+  <div class="wrap">
+    <div class="stack" style="max-width: 760px">
+      <span class="eyebrow">Ein Rennwochenende</span>
+      <h2 class="rise">Fünf Lichter bis zur Zielflagge</h2>
+      <p class="lead">Zwischen zwei Rennen arbeitet die Fabrik. Am Wochenende triffst du an der Strecke die Entscheidungen, Session für Session.</p>
+    </div>
+    <div class="sticky-gantry" aria-hidden="true">
+      <div class="gantry gantry-big">
+        <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+        <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+        <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+        <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+        <div class="pod"><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></div>
+      </div>
+    </div>
+    <div class="flow">
+      <div class="flow-row">
+        <span class="idx">01</span>
+        <div><h3>Training</h3><p class="muted">Sieben Setup-Regler und fünf Trainingsblöcke. Nach jedem Run meldet der Fahrer, wo es hakt, und das grüne Fenster der Ingenieure wird enger. Longruns messen, wie schnell die Reifen abbauen.</p></div>
+        <p class="detail">80 % Setup-Vertrauen kosten rund 0,2 Sekunden pro Runde.</p>
+      </div>
+      <div class="flow-row">
+        <span class="idx">02</span>
+        <div><h3>Qualifying</h3><p class="muted">Q1, Q2 und Q3 im K.-o.-System. Du wählst Mischung, Anzahl der Versuche und Risiko. Die Ingenieure sagen dir vorher, wie knapp es an der Grenze wird.</p></div>
+        <p class="detail">„Am Limit“ ist im Mittel 0,28 % schneller. 13 % dieser Runden werden gestrichen.</p>
+      </div>
+      <div class="flow-row">
+        <span class="idx">03</span>
+        <div><h3>Strategie</h3><p class="muted">Jede Kombination aus Mischungen und Stopps wird durchgerechnet. Du siehst die Rundenzeit über die ganze Distanz und verschiebst die Stopps selbst.</p></div>
+        <p class="detail">Ein Boxenstopp kostet 2026 rund 21,6 Sekunden, unter Safety Car etwa die Hälfte.</p>
+      </div>
+      <div class="flow-row">
+        <span class="idx">04</span>
+        <div><h3>Rennen</h3><p class="muted">Zeitenturm, Funk, Safety Car und Regen. Du stellst Fahrmodus und Energie ein, rufst den Fahrer an die Box und entscheidest, wenn der Renningenieur fragt.</p></div>
+        <p class="detail">Eine Einheit der Startampel pro Sekunde, dann 0,2 bis 3 Sekunden Warten. Wie in der Formel 1.</p>
+      </div>
+      <div class="flow-row">
+        <span class="idx">05</span>
+        <div><h3>Auswertung</h3><p class="muted">Die Ingenieure vergleichen deine Rennpace mit dem Startplatz, zeigen den Reifenabbau je Stint und was das Setup gekostet hat. Danach kommt die technische Abnahme.</p></div>
+        <p class="detail">Mehr als 1,0 mm Plankenabrieb oder weniger als ein Liter Sprit: Disqualifikation.</p>
+      </div>
+    </div>
+    <div class="btns" style="margin-top: 36px"><a class="btn ghost" href="rennwochenende.html">Das Wochenende im Detail <i class="arrow"></i></a></div>
+  </div>
+</section>
+
+<section class="band carbon">
+  <div class="wrap stack lg">
+    <div class="stack" style="max-width: 760px">
+      <span class="eyebrow">Zielkonflikte</span>
+      <h2 class="rise">Jeder Vorteil kostet woanders Zeit</h2>
+      <p class="lead">Es gibt kein bestes Teil und kein bestes Setup. Es gibt nur das passende für diese Strecke, diese Temperatur und dieses Rennen. Diese Werte stammen aus dem Fahrzeugmodell des Spiels.</p>
+    </div>
+    <div class="grid-4">
+      <div class="stat rise"><span class="v">+10–13 km/h</span><span class="k">Topspeed mit 4° weniger Flügel. Kostet 0,4–0,5 s im Qualifying und 4–5 % mehr Reifenverschleiß.</span></div>
+      <div class="stat rise"><span class="v">+0,13 s</span><span class="k">pro Runde in Monaco für 10 kg Übergewicht. Wer leichter baut, darf den Ballast frei verteilen.</span></div>
+      <div class="stat rise"><span class="v">1,0 mm</span><span class="k">Plankenabrieb sind erlaubt. Tiefer liegen bringt Abtrieb, zu tief führt zur Disqualifikation.</span></div>
+      <div class="stat rise"><span class="v">115 °C</span><span class="k">Kühlmittel, ab dem der Motor Leistung zurücknimmt. Im Windschatten steigt es um bis zu 10 °C.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap stack lg">
+    <div class="stack" style="max-width: 760px">
+      <span class="eyebrow">Mehr erfahren</span>
+      <h2 class="rise">Drei Ebenen, ein Auto</h2>
+    </div>
+    <div class="grid-3">
+      <a class="card-link rise" href="konstruktion.html">
+        <div class="media"><img src="assets/img/detail-rearwing.webp" alt="Heckflügel und Beam Wing des 2026er Autos in Nahaufnahme" loading="lazy"></div>
+        <div class="body"><span class="eyebrow cyan">Konstruktion</span><h3>Entwerfen, messen, bauen</h3><p class="muted">Fünf Bauteile mit je drei Parametern. Rechnung, CFD und Windkanal liegen unterschiedlich weit daneben.</p><span class="go">Zur Konstruktion</span></div>
+      </a>
+      <a class="card-link rise" href="rennwochenende.html">
+        <div class="media"><img src="assets/img/ui-race.webp" alt="Spielszene: Rennen mit Zeitenturm, Streckenkarte und Cockpit-Anzeige" loading="lazy"></div>
+        <div class="body"><span class="eyebrow">Rennwochenende</span><h3>Vom Setup bis zur Abnahme</h3><p class="muted">Training, Qualifying, Strategie, Rennen und Auswertung, mit den Formeln dahinter.</p><span class="go">Zum Rennwochenende</span></div>
+      </a>
+      <a class="card-link rise" href="epochen.html">
+        <div class="media"><img src="assets/img/era-1990.webp" alt="Das 1990er Auto im Studio" loading="lazy"></div>
+        <div class="body"><span class="eyebrow" style="color: var(--yellow)">Epochen</span><h3>1990, 2004, 2010, 2026</h3><p class="muted">Saugmotor, V10 mit Nachtanken, Doppeldiffusor, Hybrid mit aktiver Aerodynamik.</p><span class="go">Zu den Epochen</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="band tight">
+  <div class="wrap stack lg">
+    <div class="grid-2 wide-right">
+      <div class="stack">
+        <span class="eyebrow cyan">Maßstab 1:1</span>
+        <h2 class="rise">36 Jahre Reglement in einer Zeichnung</h2>
+        <p class="lead">1990 war ein Formel-1-Auto 4,47 m lang und wog ohne Fahrer 500 kg. 2026 sind es 5,20 m und 770 kg mit Fahrer. Die Seitenansichten stammen aus den Modellen des Spiels, alle im selben Maßstab.</p>
+        <div class="btns"><a class="btn ghost" href="epochen.html">Alle Epochen <i class="arrow"></i></a></div>
+      </div>
+      <div class="bp bp-stack">
+        <div class="bp-row" data-slide><span class="yr">1990<small>4,47 m</small></span><img src="assets/img/bp-side-1990.webp" alt="Seitenansicht 1990 als Linienzeichnung" loading="lazy"></div>
+        <div class="bp-row" data-slide><span class="yr">2004<small>4,55 m</small></span><img src="assets/img/bp-side-2004.webp" alt="Seitenansicht 2004 als Linienzeichnung" loading="lazy"></div>
+        <div class="bp-row" data-slide><span class="yr">2010<small>4,80 m</small></span><img src="assets/img/bp-side-2010.webp" alt="Seitenansicht 2010 als Linienzeichnung" loading="lazy"></div>
+        <div class="bp-row" data-slide><span class="yr">2026<small>5,20 m</small></span><img src="assets/img/bp-side-2026.webp" alt="Seitenansicht 2026 als Linienzeichnung" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band cta">
+  <div class="bgimg"><img src="assets/img/rear.webp" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <div class="stack" style="max-width: 620px">
+      <span class="eyebrow">Download</span>
+      <h2 class="rise">APEX Engineer 2.10 für macOS</h2>
+      <p class="lead">Ein Paket für Apple Silicon und Intel, ab macOS 13. Kein Konto, keine Verbindung, kein Abo. Der Spielstand bleibt auf deinem Mac.</p>
+      <div class="btns"><a class="btn primary" href="download.html">Zum Download <i class="arrow"></i></a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="apex">APEX</span><span class="slash"></span><span class="eng">ENGINEER</span></a>
+    <nav aria-label="Fußzeile"><a href="index.html">Spiel</a><a href="konstruktion.html">Konstruktion</a><a href="rennwochenende.html">Rennwochenende</a><a href="epochen.html">Epochen</a><a href="download.html">Download</a></nav>
+    <p class="small">Version 2.10 · Unabhängiges Spielprojekt, nicht mit der Formula One Group, der FIA oder den genannten Teams verbunden. Alle Bilder sind Renders aus dem Spiel und seinen 3D-Modellen.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
